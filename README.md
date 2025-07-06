@@ -1,4 +1,4 @@
-# 🧠 *Neuramini – AI Powered Chatbot Platform*
+# *Neuramini – AI Powered Chatbot Platform*
 
 Neuramini is a full-stack conversational chatbot platform developed and deployed using cutting-edge technologies. It integrates *Large Language Models (LLMs)* for text-based interaction and *Hugging Face ViT* for intelligent image classification, providing users with a smart, seamless, multimodal chat experience.
 
