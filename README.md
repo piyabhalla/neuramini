@@ -34,5 +34,3 @@ Neuramini is a full-stack conversational chatbot platform developed and deployed
 - Git, GitHub, Vercel  
 
 ---
-
->>>>>>> 3fda8fd295004ec4f139a3332de3252086bfd2d7
