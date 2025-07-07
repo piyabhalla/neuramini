@@ -8,6 +8,7 @@ export default async function handler(req, res) {
   try {
     // 📸 If image exists → process via Hugging Face ViT
     if (image) {
+        console.log("IMAGE URL SENT TO HF:",image);
       const hfRes = await fetch("https://api-inference.huggingface.co/models/google/vit-base-patch16-224", {
         method: "POST",
         headers: {
