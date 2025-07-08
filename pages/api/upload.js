@@ -22,8 +22,11 @@ export default async function handler(req, res) {
       folder: 'chatbot_uploads',
     });
 
+    console.log("📡 Cloudinary Upload Response:", result); // ✅ Debug log
+
     return res.status(200).json({ url: result.secure_url });
   } catch (err) {
+    console.error("❌ Cloudinary Upload Error:", err); // ✅ Log the error too
     return res.status(500).json({ error: 'Upload failed', details: err.message });
   }
 }
