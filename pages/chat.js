@@ -314,6 +314,7 @@ export default function Chat() {
         <input
           type="file"
           accept="image/*"
+          capture="environment"
           onChange={(e) => setImageFile(e.target.files[0])}
           style={{ display: "none" }}
           id="upload-image"
