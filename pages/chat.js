@@ -93,6 +93,7 @@ export default function Chat() {
     let imageUrl = null;
     if (imageFile) {
       try {
+        console.log("📸 Mobile uploaded file:", imageFile);
         imageUrl = await uploadImageToCloudinary(imageFile);
       } catch (err) {
         console.error("Image upload failed:", err);
@@ -315,7 +316,11 @@ export default function Chat() {
           type="file"
           accept="image/*"
           capture="environment"
-          onChange={(e) => setImageFile(e.target.files[0])}
+          onChange={(e) => {
+            const file = e.target.files[0];
+            console.log("📸 Mobile uploaded file:", file);
+            setImageFile(file);
+          }}
           style={{ display: "none" }}
           id="upload-image"
         />
@@ -353,4 +358,4 @@ export default function Chat() {
       </div>
     </div>
   );
-} 
+}
